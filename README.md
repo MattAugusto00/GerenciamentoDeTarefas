@@ -9,5 +9,5 @@ Sistema de gerenciamento de tarefas para auxiliar na organização diária
 * Busca e filtragem de tarefas por título, data ou status
 
 ## Tecnologias utilizadas: 
-* HTML, CSS e JavaScript: para desenvolver uma interface amigável para o usuário, onde ele pode cadastrar e gerenciar suas tarefas.
-* Java: para criar a lógica do sistema, como a persistência de dados, autenticação e validação de formulários.
+* **HTML, CSS e JavaScript:** para desenvolver uma interface amigável para o usuário, onde ele pode cadastrar e gerenciar suas tarefas.
+* **Java:** para criar a lógica do sistema, como a persistência de dados, autenticação e validação de formulários.
