@@ -1,0 +1,110 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  background-color: black;
+  height: 60px;
+}
+
+h1{
+  display: grid;
+  justify-content: center;
+  font-style: italic;
+  color: rgb(0, 187, 255);
+}
+
+h4{
+  display: grid;
+  justify-content: center;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+}
+
+.tarefas h2{
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 187, 255);
+  height: 70px;
+}
+
+.addTarefa .botaoNovaTarefa{
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  font-size: large;
+}
+
+.tarefas .ambientes{
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+}
+
+.taskList{
+  list-style: none;
+  padding: 0;
+}
+
+.taskList li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.taskList input[type="checkbox"]{
+  margin-right: 10px;
+}
+
+.taskList label{
+  font-size: 22px;
+}
+
+#task-form{
+  display: grid;
+}
+
+#task-form label{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.status{
+  display: flex;
+  margin-top: -10px;
+}
+
+.opcao{
+  margin-right: 20px;
+  display: grid;
+}
+
+.opcao input{
+  margin-top: -20px;
+}
+
+#task-form #due-date{
+  cursor: pointer;
+}
+
+.botaoAddTarefa{
+  background-color: rgb(0, 187, 255);
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 40px;
+}
+
+.listaTarefas button{
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  font-size: large;
+}
