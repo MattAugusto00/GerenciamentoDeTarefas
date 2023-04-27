@@ -1,0 +1,44 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+  display: grid;
+  align-items: center;
+  background-color: black;
+  height: 60px;
+}
+
+header #sair{
+  position: relative;
+  width: 30px;
+  left: 2%;
+  color: white;
+  text-decoration: none;
+}
+
+.apresentacao{
+  display: grid;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.addNovaTarefa{
+  display: grid;
+}
+
+.listaTarefas{
+  background-color: blueviolet;
+}
+
+#lista-tarefas{
+  list-style: none;
+}
+
+#btn-add-tarefa{
+  background-color: blueviolet;
+  padding: 3px;
+  border-radius: 5px;
+}

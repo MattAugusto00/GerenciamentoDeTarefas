@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a id="sair" href="../code/login.html">Sair</a>
+  </header>
+  
+  <div class="apresentacao">
+    <h1>Gerenciador de Tarefas</h1>
+    <p>Sobre o Gerenciador: ...</p>
+  </div>
+
+  <div class="addNovaTarefa">
+    <h2>Adicionar nova tarefa</h2>
+    <form id="formulario">
+      <label for="">Nome da tarefa</label>
+      <input type="text" id="nome-tarefa" placeholder="Digite aqui o nome da tarefa">
+
+      <label for="">Prazo de entrega</label>
+      <input type="datetime-local" id="prazo-tarefa">
+      
+      <button type="submit" id="btn-add-tarefa">Adicionar tarefa</button>
+    </form>
+  </div>
+
+  <div class="listaTarefas">
+    <h2>Lista de tarefas</h2>
+    <ul id="lista-tarefas">
+      <li>Tarefa 1</li>
+      <li>Tarefa 2</li>
+      <li>Tarefa 3</li>
+    </ul>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <a id="sair" href="../code/login.html">Sair</a>
+  </header>
+  <h1>Gerenciador de Tarefas</h1>
+  <div class="tarefas">
+    <h2>Tarefas</h2>
+
+    <div class="addTarefa">
+      <button id="botaoNovaTarefa">Adicionar nova tarefa</button>
+      <form id="task-form">
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" placeholder="Digite o titulo da tarefa"><br>
+      
+        <label for="tipoTarefa">Tipo de Tarefa</label>
+        <input type="text" id="tipoTarefa" name="tipoTarefa" placeholder="Coloque o tipo de tarefa(ex: faculdade, casa, academia, saude, etc...)"><br>
+      
+        <label for="due-date">Data de vencimento</label>
+        <input type="date" id="due-date" name="due-date"><br>
+  
+        <label for="status">Qual o status da tarefa?</label>
+        <div class="status">
+          <div class="opcao">
+            <h5>À fazer</h5>
+            <input type="checkbox" id="aFazer" name="aFazer"><br>
+          </div>
+          <div class="opcao">
+            <h5>Em Andamento</h5>
+            <input type="checkbox" id="emAndamento" name="emAndamento"><br>
+          </div>
+          <div class="opcao">
+            <h5>Finalizado</h5>
+            <input type="checkbox" id="finalizado" name="finalizado"><br>
+          </div>
+        </div>
+  
+        <button id="botaoAddTarefa" type="submit">Adicionar tarefa</button>
+      </form>
+    </div>
+
+    <div class="listaTarefas">
+      <button>Lista de Tarefas</button>
+      <button class="fazer">À Fazer</button>
+      <div class="ambientes">
+        <ul class="taskList">
+          <h3>Faculdade</h3>
+          <li>
+            <input type="checkbox" id="task1" name="task1">
+            <label for="task1">Tarefa 1</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task2" name="task2">
+            <label for="task2">Tarefa 2</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task3" name="task3">
+            <label for="task3">Tarefa 3</label>
+          </li>
+        </ul>
+  
+        <ul class="taskList">
+          <h3>Casa</h3>
+          <li>
+            <input type="checkbox" id="task1" name="task1">
+            <label for="task1">Tarefa 1</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task2" name="task2">
+            <label for="task2">Tarefa 2</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task3" name="task3">
+            <label for="task3">Tarefa 3</label>
+          </li>
+        </ul>
+      </div>
+      <button class="emAndamento">Em Andamento</button>
+      
+      <button class="finalizado">Finalizado</button>
+    </div>
+  </div>
+    
+</body>
+</html>
+-->
