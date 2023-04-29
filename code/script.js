@@ -1,3 +1,12 @@
+import axios from 'axios';
+
+axios.get('https://api.example.com/users').then(
+  response => { console.log(response.data);
+  })
+  .catch(error => {
+    console.log(error);
+});
+
 const formulario = document.getElementById("formulario");
 formulario.addEventListener("submit", adicionarTarefa);
 

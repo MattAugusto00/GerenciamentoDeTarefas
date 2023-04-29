@@ -39,6 +39,7 @@ header #sair{
 
 #btn-add-tarefa{
   background-color: blueviolet;
+  cursor: pointer;
   padding: 3px;
   border-radius: 5px;
 }
