@@ -3,6 +3,7 @@ formulario.addEventListener("submit", adicionarTarefa);
 
 //Array para armazernar as tarefas
 const tarefas = [];
+const tarefasFinalizadas = [];
 
 //Adiciona a tarefa ao array em ordem crescente de data
 function adicionarTarefaAoArray(tarefa){
@@ -16,9 +17,41 @@ function renderizarListaTarefas(){
   listaTarefasParaFazer.innerHTML = " ";
 
   tarefas.forEach((tarefa) =>{
+    const indiceTarefa = tarefas.indexOf(tarefa);
+    const idCheckbox = "checkbox-" + indiceTarefa; 
+
     const novaTarefa = document.createElement("li");
-    novaTarefa.innerHTML = tarefa.nome + " Prazo de entrega: " + tarefa.data;
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = idCheckbox;
+    novaTarefa.appendChild(checkbox);
+
+    const label = document.createElement("label");
+    label.htmlFor = idCheckbox;
+    label.textContent = tarefa.nome + " Prazo de entrega: " + tarefa.data;
+    novaTarefa.appendChild(label);
+
+    checkbox.addEventListener( "change", () =>{
+      if(checkbox.checked){
+        tarefasFinalizadas.push(tarefa);
+        tarefas.splice(indiceTarefa, 1);
+        renderizarListaTarefas();
+        renderizarListaTarefasFinalizadas();
+      }
+    });
+
     listaTarefasParaFazer.appendChild(novaTarefa);
+  });
+}
+
+function renderizarListaTarefasFinalizadas(){
+  const listaTarefasFinalizadas = document.getElementById("tarefas-finalizadas");
+  listaTarefasFinalizadas.innerHTML = " ";
+
+  tarefasFinalizadas.forEach((tarefa) =>{
+    const novaTarefa = document.createElement("li");
+    novaTarefa.textContent = tarefa.nome;
+    listaTarefasFinalizadas.appendChild(novaTarefa);
   });
 }
 
