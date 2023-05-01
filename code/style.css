@@ -36,7 +36,7 @@ header #sair{
 }
 
 .listaTarefasParaFazer{
-  background-color: blueviolet;
+  background-color: aqua;
 }
 
 #lista-tarefas-para-fazer{
@@ -44,14 +44,17 @@ header #sair{
 }
 
 #btn-add-tarefa{
-  background-color: blueviolet;
+  background-color: black;
+  color: aqua;
   cursor: pointer;
   padding: 3px;
   border-radius: 5px;
 }
 
 .tarefasFinalizadas{
-  background-color: chartreuse;
+  background-color: black;
+  color: aqua;
+  margin-bottom: 0px;
 }
 
 #tarefas-finalizadas{

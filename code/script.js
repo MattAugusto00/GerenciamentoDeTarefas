@@ -28,7 +28,7 @@ function renderizarListaTarefas(){
 
     const label = document.createElement("label");
     label.htmlFor = idCheckbox;
-    label.textContent = tarefa.nome + " Prazo de entrega: " + tarefa.data;
+    label.textContent = tarefa.nome + " Prazo de entrega" + tarefa.data;
     novaTarefa.appendChild(label);
 
     checkbox.addEventListener( "change", () =>{
